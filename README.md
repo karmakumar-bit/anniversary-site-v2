@@ -22,7 +22,7 @@ To run this project locally, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Anuj579/anniversary-site-v2.git
+git clone https://github.com/karmakumar-bit/anniversary-site-v2.git
 
 # Navigate into the folder
 cd anniversary-site-v2
