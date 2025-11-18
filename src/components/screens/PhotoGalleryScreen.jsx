@@ -14,6 +14,7 @@ export default function PhotoGalleryScreen({ onNext }) {
         "/images/2.jpg",
         "/images/3.jpg",
         "/images/4.jpg",
+        "/images/5.jpg",
     ]
 
     const [details, setDetails] = React.useState(null)
