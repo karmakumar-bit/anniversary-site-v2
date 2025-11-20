@@ -26,9 +26,7 @@ Your Forever Person 💕`
     
     const handleCardClick = () => {
     setShowOverlay(true)
-    setShowWhatsAppBtn(false) // overlay khulte hi button hide karein
-    }
-
+        
     const closeOverlay = () => {
         setShowOverlay(false)
     }
