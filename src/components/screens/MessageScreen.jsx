@@ -1,13 +1,13 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import ScreenContainer from "../ScreenContainer"
 
 export default function MessageScreen() {
     const [showOverlay, setShowOverlay] = useState(false)
-    const [showWhatsAppBtn, setShowWhatsAppBtn] = useState(false)
-  const scrollRef = useRef(null)
+    const [showReplyButton, setShowReplyButton] = useState(false)
+    const scrollRef = useRef(null)
 
     const romanticMessage = `My Dearest Cutiepiee,
 
@@ -22,30 +22,38 @@ I promise to love you through all of life's adventures, to support your dreams, 
 Happy Anniversary, my beautiful soul. Here's to many more years of love, laughter, and endless happiness together.
 
 With all my love and devotion,
-Your Forever Person 💕`
-    
+Your Forever Person 💕`;
+
     const handleCardClick = () => {
-    setShowOverlay(true)
-        
+        setShowOverlay(true)
+        setShowReplyButton(false)
+        setTimeout(() => {
+            if (scrollRef.current) {
+                scrollRef.current.scrollTop = 0
+            }
+        }, 50)
+    }
+
     const closeOverlay = () => {
         setShowOverlay(false)
     }
-    const handleScroll = (e) => {
-    const target = e.target
-    // check karein ki user bottom tak scroll kar gaya hai
-    const isAtBottom = Math.abs(target.scrollHeight - (target.scrollTop + target.clientHeight)) < 5
-    if (isAtBottom) {
-      setShowWhatsAppBtn(true)
+
+    const handleScroll = () => {
+        const container = scrollRef.current
+        if (!container) return
+
+        const bottom =
+            container.scrollTop + container.clientHeight >= container.scrollHeight - 10
+
+        if (bottom) {
+            setShowReplyButton(true)
+        }
     }
-  }
 
-  const handleWhatsApp = () => {
-    const phone = "916201456526" // ← apna number daalein
-    const message = My last message Aaj se hamesha ke liye katti🤌🏻 mere taraf se No hai 😤 // poora romantic message WhatsApp mein chala jayega
+    const whatsappMessage =
+        "My last message: Aaj se hamesha ke liye katti🤌🏻 mere taraf se No hai 😤"
 
-    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
-    window.open(url, "_blank")
-  }
+    const whatsappLink = `https://wa.me/916201456526?text=${encodeURIComponent(whatsappMessage)}`
 
     return (
         <ScreenContainer>
@@ -57,11 +65,11 @@ Your Forever Person 💕`
                     transition={{ duration: 0.8 }}
                 >
                     <motion.h1
-                        className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-pink-500 bg-clip-text text-transparent mb-4 text-balance leading-tight"
+                        className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-pink-500 bg-clip-text text-transparent mb-4"
                         animate={{
                             backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
                         }}
-                        transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
+                        transition={{ duration: 3, repeat: Infinity }}
                     >
                         A Special Message For You
                     </motion.h1>
@@ -79,6 +87,7 @@ Your Forever Person 💕`
                         transition={{ duration: 0.5 }}
                         onClick={handleCardClick}
                         className="w-80 h-48 mx-auto bg-gradient-to-br from-pink-900/40 via-purple-900/40 to-pink-800/40 backdrop-blur-lg rounded-2xl border-2 border-pink-400/50 shadow-2xl relative overflow-hidden cursor-pointer">
+                        
                         <motion.div className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-400/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
 
                         <div className="flex flex-col items-center justify-center h-full p-6">
@@ -88,7 +97,7 @@ Your Forever Person 💕`
                                     scale: [1, 1.2, 1],
                                     rotate: [0, 5, -5, 0],
                                 }}
-                                transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
+                                transition={{ duration: 2, repeat: Infinity }}
                             >
                                 💌
                             </motion.div>
@@ -108,8 +117,8 @@ Your Forever Person 💕`
                             className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ duration: .5 }}
                             exit={{ opacity: 0 }}
+                            transition={{ duration: .5 }}
                             onClick={closeOverlay}
                         >
                             <motion.div
@@ -133,7 +142,10 @@ Your Forever Person 💕`
                                     <p className="text-purple-300">This is just for you ♥</p>
                                 </div>
 
+                                {/* Scrollable Message */}
                                 <div
+                                    ref={scrollRef}
+                                    onScroll={handleScroll}
                                     className="h-80 overflow-y-auto pr-4 mb-6"
                                     style={{
                                         scrollbarWidth: "thin",
@@ -144,15 +156,24 @@ Your Forever Person 💕`
                                         {romanticMessage}
                                     </div>
                                 </div>
-                                {/* WhatsApp Button — Scroll ke end pe dikhai dega */}
-                {showWhatsAppBtn && (
-                  <button
-                    onClick={handleWhatsApp}
-                    className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-xl transition-all duration-300 shadow-lg"
-                  >
-                    Send Reply
-                  </button>
-                )}
+
+                                {/* WhatsApp Reply Button — appears after scroll bottom */}
+                                <AnimatePresence>
+                                    {showReplyButton && (
+                                        <motion.a
+                                            initial={{ opacity: 0, y: 20 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0 }}
+                                            transition={{ duration: 0.5 }}
+                                            href={whatsappLink}
+                                            target="_blank"
+                                            className="block bg-green-500 text-white font-bold text-lg py-3 rounded-xl shadow-lg hover:bg-green-600 transition text-center"
+                                        >
+                                            Send Reply 
+                                        </motion.a>
+                                    )}
+                                </AnimatePresence>
+
                             </motion.div>
                         </motion.div>
                     )}
@@ -160,4 +181,4 @@ Your Forever Person 💕`
             </div>
         </ScreenContainer>
     )
-}
+                                }
