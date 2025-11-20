@@ -6,6 +6,8 @@ import ScreenContainer from "../ScreenContainer"
 
 export default function MessageScreen() {
     const [showOverlay, setShowOverlay] = useState(false)
+    const [showWhatsAppBtn, setShowWhatsAppBtn] = useState(false)
+  const scrollRef = useRef(null)
 
     const romanticMessage = `My Dearest Cutiepiee,
 
@@ -21,14 +23,31 @@ Happy Anniversary, my beautiful soul. Here's to many more years of love, laughte
 
 With all my love and devotion,
 Your Forever Person 💕`
-
+    
     const handleCardClick = () => {
-        setShowOverlay(true)
+    setShowOverlay(true)
+    setShowWhatsAppBtn(false) // overlay khulte hi button hide karein
     }
 
     const closeOverlay = () => {
         setShowOverlay(false)
     }
+    const handleScroll = (e) => {
+    const target = e.target
+    // check karein ki user bottom tak scroll kar gaya hai
+    const isAtBottom = Math.abs(target.scrollHeight - (target.scrollTop + target.clientHeight)) < 5
+    if (isAtBottom) {
+      setShowWhatsAppBtn(true)
+    }
+  }
+
+  const handleWhatsApp = () => {
+    const phone = "916201456526" // ← apna number daalein
+    const message = My last message Aaj se hamesha ke liye katti🤌🏻 mere taraf se No hai 😤 // poora romantic message WhatsApp mein chala jayega
+
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
+    window.open(url, "_blank")
+  }
 
     return (
         <ScreenContainer>
@@ -127,6 +146,15 @@ Your Forever Person 💕`
                                         {romanticMessage}
                                     </div>
                                 </div>
+                                {/* WhatsApp Button — Scroll ke end pe dikhai dega */}
+                {showWhatsAppBtn && (
+                  <button
+                    onClick={handleWhatsApp}
+                    className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-xl transition-all duration-300 shadow-lg"
+                  >
+                    Send Reply
+                  </button>
+                )}
                             </motion.div>
                         </motion.div>
                     )}
