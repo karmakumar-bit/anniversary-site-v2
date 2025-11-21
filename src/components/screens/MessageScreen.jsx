@@ -9,7 +9,7 @@ export default function MessageScreen() {
     const [showReplyButton, setShowReplyButton] = useState(false)
     const scrollRef = useRef(null)
 
-    const romanticMessage = `My Dearest Cutiepiee,
+    const romanticMessage = `My Dear Bestfriend & Crush,
 
 Every day with you feels like a beautiful dream that I never want to wake up from. You've brought so much joy, laughter, and warmth into my life that I can't imagine a world without you in it.
 
@@ -51,7 +51,7 @@ Your Forever Person 💕`;
     }
 
     const whatsappMessage =
-        "My last message: Aaj se hamesha ke liye katti🤌🏻 mere taraf se No hai 😤"
+        "My last message:Goodbye forever. Aaj se hamesha ke liye katti🤌🏻 mere taraf se No hai 😤"
 
     const whatsappLink = `https://wa.me/916201456526?text=${encodeURIComponent(whatsappMessage)}`
 
@@ -103,7 +103,7 @@ Your Forever Person 💕`;
                             </motion.div>
 
                             <h3 className="text-2xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent mb-2">
-                                For You, My Cutiepiee
+                                For You, My Crush 😍
                             </h3>
 
                             <p className="text-purple-300 text-sm">Click to read my message</p>
