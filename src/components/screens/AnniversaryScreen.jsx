@@ -43,11 +43,11 @@ export default function AnniversaryScreen({ onNext }) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.8 }}
                 >
-                    Happy Anniversary{" "}
+                    Happy Friendship{" "}
                     <motion.span
                         className="text-purple-400"
                     >
-                        Cutiepiee
+                       Anniversary
                     </motion.span>
                 </motion.h1>
 
