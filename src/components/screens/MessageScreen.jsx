@@ -22,7 +22,7 @@ Thanks for being my first female friend (bestfriend) & also Pasandida aurat 😜
 
 But but but... Not every story gets the happy ending .🙂💔
 
-Kabhi humari friendship sabse zyada special thi. Pehle roj baatein karte the, Har baat hum share karte the, bina soche samjhe ek-dusre ka saath dete the. Par shayad waqt ke saath hum badal gaye, ya phir humari priorities. Kabhi hum bina baat kiye reh nahi paate the, aur aaj baat karne ka reason bhi nahi milta. Main sirf itna chahta hu ki aap khush rahe, chahe aapko meri jarurat na bhi ho. Koi bura ehsaas nahi, sirf ek silent goodbye.
+Kabhi humari bhi friendship sabse zyada special thi. Pehle roj baatein karte the, Har baat hum share karte the, bina soche samjhe ek-dusre ka saath dete the. Par shayad waqt ke saath hum badal gaye, ya phir humari priorities. Kabhi hum bina baat kiye reh nahi paate the, aur aaj baat karne ka reason bhi nahi milta. Main sirf itna chahta hu ki aap hamesha khush rahe meri dua hai, chahe aapko meri jarurat na bhi ho. Koi bura ehsaas nahi, sirf ek silent goodbye.
 
 I wish I could tell you how much I miss you, but I don’t want to sound clingy or dramatic.
 Kabhi lagta tha hum kabhi door nahi honge, par aaj waqt ne humare beech itni khamoshi daal di hai ki main khud ko hi samjha nahi paata, Har choti baat, har late-night baat — sab yaad aata hai.
@@ -30,20 +30,20 @@ Kabhi kabhi chat khol ke dekh leta hu… hoping aap message karenge… par wo no
 I miss my best friend… not just the person, but the feeling of being understood without saying a word.
 
 Pehle hum ek-dusre ke liye bilkul strangers the… phir dheere-dheere baatein badhti gayi, hansi-mazak hua, trust build hua, aur ek waqt aaya jab aap sirf dost nahi, mere sabse close insaan ban gaye.
-Woh daily chats, woh daily good night or radhe Krishna, woh “koi baat nahi, main hoon na” wala comfort sab kuch itna perfect lagta tha ki lagta tha yeh bond hamesha rahega.
+Woh daily chats, woh daily good night or radhe radhe, woh “koi baat nahi, main hoon na” wala comfort sab kuch itna perfect lagta tha ki lagta tha yeh bond hamesha rahega.
 Par pata nahi kaha se distance aa gya. Aur dheere-dheere hum silent hote gaye, chat kam hoti gayi, care chup-chap ho gayi, aur ek din realize hua ki jis insaan ko main sabse zyada jaanta tha, aaj usko dekhkar bhi kuch kehne ki himmat nahi hoti.
 Aap ab bhi yaad aati hai par main bas chup rehta hu. Aap ab bhi special hai par main kuch bol nahi pata.
-The journey of our story - Stranger>Friend>CloseFriend>Friend forever >Bestfriend 😍>Just Friend >Stranger again,🥹🥲
+The journey of our story- Stranger>Friend >CloseFriend >Friend forever >Bestfriend 😍>Just Friend >Stranger again,🥹🥲
 it's ended, but it was beautiful..
 
-Aapne ye bhi notice nhi kiya ki kab maine aapse kuch bolna chhod diya and still maine intezaar kiya tumhare ek message ka ek call ka..Lekin Jis din aapne kaha ki KON HO aap us din pata chala ki main important nhi hu or kabhi bhi aap par haq nhi jatayenge SO SORRY.
+Aapne ye bhi notice nhi kiya ki kab maine aapse kuch bolna chhod diya and still maine intezaar kiya aapke ek message ka ek call ka..Lekin Jis din aapne kaha ki KON HO aap us din pata chala ki main important nhi hu or kabhi bhi aap par haq nhi jatayenge SO SORRY.
 One day you're gonna miss meri ulti sidhi baatein and sara din bak bak karke dimag kharab karna..!! Because I know aap mere sath khush nhi the aur maine aapko bahut pareshan kiya lekin ab aur nhi ab finally main hamesha hamesha ke liye aapse dur ja raha hu..
 Dear bestie😼😍..
-Khyaal rakhna apna, Har koi mere jaisa nahi hoga..! GOOD BYE MY FAVORITE PERSON..AND 
-THANKS FOR EVERYTHING..
+Khyaal rakhna apna, Har koi mere jaisa nahi hoga..!
+Radhe Krishna ❤️😍
 
-With all my love and devotion,
-Your Forever Person 💕`;
+With all my love😼 and devotion,
+Your Forever Person 🥰💕`;
 
     const handleCardClick = () => {
         setShowOverlay(true)
