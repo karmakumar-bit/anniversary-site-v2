@@ -9,7 +9,7 @@ export default function MessageScreen() {
     const [showReplyButton, setShowReplyButton] = useState(false)
     const scrollRef = useRef(null)
 
-    const romanticMessage = `My Dear Bestfriend & Crush,
+    const romanticMessage = `My Dear Bestfriend,
 
 Every day with you feels like a beautiful dream that I never want to wake up from. You've brought so much joy, laughter, and warmth into my life that I can't imagine a world without you in it.
 
@@ -51,7 +51,7 @@ Your Forever Person 💕`;
     }
 
     const whatsappMessage =
-        "My last message:Goodbye forever. Aaj se hamesha ke liye katti🤌🏻 mere taraf se No hai 😤"
+        "Goodbye forever. Aaj se hamesha ke liye katti🤌🏻 mere😼 taraf se No always no 😤"
 
     const whatsappLink = `https://wa.me/916201456526?text=${encodeURIComponent(whatsappMessage)}`
 
