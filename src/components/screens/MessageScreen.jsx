@@ -36,11 +36,11 @@ Aap ab bhi yaad aati hai par main bas chup rehta hu. Aap ab bhi special hai par 
 The journey of our story- Stranger>Friend >CloseFriend >Friend forever >Bestfriend 😍 >Just Friend >Stranger again,🥹🥲
 it's ended, but it was beautiful..
 
-Aapne ye bhi notice nhi kiya ki kab maine aapse kuch bolna chhod diya and still maine intezaar kiya aapke ek message ka ek call ka..Lekin Jis din aapne kaha ki KON HO aap us din pata chala ki main important nhi hu or kabhi bhi aap par haq nhi jatayenge SO SORRY.
+Sach kahu toh aap abhi wo ladki hai hi nhi jisse mai pehle baar mila tha.. Aapne ye bhi notice nhi kiya ki kab maine aapse kuch bolna chhod diya and still maine intezaar kiya aapke ek message ka ek call ka..Lekin Jis din aapne kaha ki KON HO aap us din pata chala ki main important nhi hu or kabhi bhi aap par haq nhi jatayenge SO SORRY.
 One day you're gonna miss meri ulti sidhi baatein and sara din bak bak karke dimag kharab karna..!! Because I know aap mere sath khush nhi the aur maine aapko bahut pareshan kiya lekin ab aur nhi ab finally main hamesha hamesha ke liye aapse dur ja raha hu..
-Dear bestie😼 😍..
+Dear bestie😼 ...
 Khyaal rakhna apna, Har koi mere jaisa nahi hoga..!
-Radhe Krishna ❤️ 😍
+Radhe Krishna ❤️💌 
 
 With all my love😼 and devotion,
 Your Forever Person 🥰💕`;
